@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --alpha: 1;
+  --alpha-2: 0.8;
+  --alpha-3: 0.6;
+  --alpha-4: 0.4;
+  --alpha-5: 0.2;
+}
+
+:root {
+  --colorBg:hsla(180, 3%, 6%, 1);
+  --text: hsla(0, 0%, 100%, 1);
+  --bg: hsla(343, 92%, 45%, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  min-width: 100%;
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  display: block;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+body {
+  background-color: var(--colorBg);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  position: relative;
+  -webkit-transition: background 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
+}
+
+main {
+  -ms-touch-action: none;
+      touch-action: none;
+  max-width: 480px;
+}
+
+.list--container {
+  background: var(--bg);
+  position: relative;
+  height: 99px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.trash--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.inner--wrapper {
+  background: var(--colorBg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1em;
+  color: var(--text);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  place-items: center;
+  gap: 24px;
+}
+
+.image--wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  pointer-events: none;
+}
+
+.image--wrapper img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.text--wrapper {
+  pointer-events: none;
+}
+
+.text--wrapper h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.text--wrapper p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  max-width: 221px;
+  color: #cec0c4;
+}
+/*# sourceMappingURL=Styles.css.map */
